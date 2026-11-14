@@ -46,6 +46,8 @@ chmod +x CStructParserGUI_Linux_x64
 # FULL USERGUIDE EN/RU
 ## User Guide / Руководство пользователя
 
+![Main Window](https://github.com/RudyNuts/c-struct-parser-gui/blob/main/app_screen.png?raw=true)
+
 ### English
 - **File Menu:** Allows creating a new document, opening an existing file, saving changes, saving as a new file, and exiting the application. If there are unsaved changes, the application will prompt you to save them.
 - **Edit Menu:** Provides standard text editing operations (Undo, Redo, Cut, Copy, Paste, Delete, Select All). Keyboard shortcuts are supported.
