@@ -129,10 +129,34 @@ class MainWindow(QMainWindow):
         edit_menu.addAction(self.act_select_all)
 
         text_menu = menubar.addMenu("Text")
-        stubs = ["Task Statement", "Grammar", "Grammar Classification",
-                 "Analysis Method", "Test Example", "References", "Source Code"]
-        for s in stubs:
-            text_menu.addAction(s, lambda checked, name=s: self.show_stub(name))
+        
+        act_task = QAction("Task Statement", self)
+        act_task.triggered.connect(lambda: self.show_stub("Task Statement"))
+        text_menu.addAction(act_task)
+
+        act_grammar = QAction("Grammar", self)
+        act_grammar.triggered.connect(lambda: self.show_stub("Grammar"))
+        text_menu.addAction(act_grammar)
+
+        act_class = QAction("Grammar Classification", self)
+        act_class.triggered.connect(lambda: self.show_stub("Grammar Classification"))
+        text_menu.addAction(act_class)
+
+        act_method = QAction("Analysis Method", self)
+        act_method.triggered.connect(lambda: self.show_stub("Analysis Method"))
+        text_menu.addAction(act_method)
+
+        act_test = QAction("Test Example", self)
+        act_test.triggered.connect(lambda: self.show_stub("Test Example"))
+        text_menu.addAction(act_test)
+
+        act_refs = QAction("References", self)
+        act_refs.triggered.connect(lambda: self.show_stub("References"))
+        text_menu.addAction(act_refs)
+
+        act_src = QAction("Source Code", self)
+        act_src.triggered.connect(lambda: self.show_stub("Source Code"))
+        text_menu.addAction(act_src)
 
         run_menu = menubar.addMenu("Run")
         run_menu.addAction(self.act_run)
@@ -191,6 +215,7 @@ class MainWindow(QMainWindow):
         self.is_modified = False
         self.current_file = None
         self.setWindowTitle(f"{APP_NAME} - New document")
+        self.tabs.setTabText(0, "New document")
 
     def open_file(self):
         if not self.maybe_save(): return
@@ -201,6 +226,7 @@ class MainWindow(QMainWindow):
         self.current_file = path
         self.is_modified = False
         self.setWindowTitle(f"{APP_NAME} - {os.path.basename(path)}")
+        self.tabs.setTabText(0, os.path.basename(path))
 
     def save_file(self):
         if not self.current_file:
@@ -209,6 +235,7 @@ class MainWindow(QMainWindow):
             f.write(self.editor.toPlainText())
         self.is_modified = False
         self.setWindowTitle(f"{APP_NAME} - {os.path.basename(self.current_file)}")
+        self.tabs.setTabText(0, os.path.basename(self.current_file))
         self.status_label.setText("Saved")
         return True
 
