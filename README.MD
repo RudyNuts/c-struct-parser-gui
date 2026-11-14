@@ -42,3 +42,35 @@ chmod +x CStructParserGUI_Linux_x64
 - `mainwindow.py` — main window class and GUI logic
 - `requirements.txt` — project dependencies
 - `.gitignore` — Git ignore rules
+
+# FULL USERGUIDE EN/RU"
+## User Guide / Руководство пользователя
+
+### English
+- **File Menu:** Allows creating a new document, opening an existing file, saving changes, saving as a new file, and exiting the application. If there are unsaved changes, the application will prompt you to save them.
+- **Edit Menu:** Provides standard text editing operations (Undo, Redo, Cut, Copy, Paste, Delete, Select All). Keyboard shortcuts are supported.
+- **Text Menu:** Contains sections for future documentation (Task Statement, Grammar, etc.). Currently not working.
+- **Run Menu:** The "Run" button starts the parser. Currently, it displays a message that the parser is not yet connected.
+- **Help Menu:** Contains a brief user guide and information about the application.
+- **Editor Area:** The top panel is where you type and edit code. The bottom panel (dark theme) is read-only and displays parser results.
+
+### Русский
+- **Меню «Файл»:** Позволяет создать новый документ, открыть существующий файл, сохранить изменения, сохранить как новый файл и выйти из приложения. При наличии несохраненных изменений программа предложит их сохранить.
+- **Меню «Правка»:** Содержит стандартные операции редактирования текста (Отменить, Повторить, Вырезать, Копировать, Вставить, Удалить, Выделить все). Поддерживаются горячие клавиши.
+- **Меню «Текст»:** Содержит разделы для будущей документации (Постановка задачи, Грамматика и т.д.). Сейчас они не функционируют.
+- **Меню «Пуск»:** Кнопка «Пуск» запускает анализатор. Сейчас она выводит сообщение о том, что парсер еще не подключен.
+- **Меню «Справка»:** Содержит краткое руководство пользователя и информацию о программе.
+- **Область редактирования:** Верхняя панель предназначена для ввода и редактирования кода. Нижняя панель (с темной темой) доступна только для чтения и отображает результаты работы парсера.
+
+## Keyboard Shortcuts / Горячие клавиши
+| Action / Действие | Shortcut / Комбинация |
+| :--- | :--- |
+| New file / Новый файл | `Ctrl + N` |
+| Open file / Открыть файл | `Ctrl + O` |
+| Save / Сохранить | `Ctrl + S` |
+| Undo / Отменить | `Ctrl + Z` |
+| Redo / Повторить | `Ctrl + Y` |
+| Cut / Вырезать | `Ctrl + X` |
+| Copy / Копировать | `Ctrl + C` |
+| Paste / Вставить | `Ctrl + V` |
+| Select All / Выделить все | `Ctrl + A` |
