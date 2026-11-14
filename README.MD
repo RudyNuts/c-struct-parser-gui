@@ -30,7 +30,7 @@ python main.py
 ```
 
 ### Option 2: Using the compiled binaries:
-Download the appropriate file from the Releases section (v0.1 (Only GUI)):
+Download the appropriate file from the **[Releases page](https://github.com/RudyNuts/c-struct-parser-gui/releases/tag/v0.1)**:
 - Windows (64-bit): Download CStructParserGUI_Windows_x64.exe and run it.
 - Linux (64-bit): Download CStructParserGUI_Linux_x64, make it executable, and run it:
 ```bash
