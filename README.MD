@@ -43,7 +43,7 @@ chmod +x CStructParserGUI_Linux_x64
 - `requirements.txt` — project dependencies
 - `.gitignore` — Git ignore rules
 
-# FULL USERGUIDE EN/RU"
+# FULL USERGUIDE EN/RU
 ## User Guide / Руководство пользователя
 
 ### English
